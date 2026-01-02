@@ -22,6 +22,8 @@ body {
   justify-content: center;
   min-height: 100svh;
   padding: 16px;
+  position: relative;
+  z-index: 1;
 }
 
 .card {
@@ -61,3 +63,31 @@ button:active {
   transform: scale(0.95);
   background: var(--pink-dark);
 }
+
+.strawberries {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.strawberry {
+  position: absolute;
+  font-size: 24px;
+  animation: floatUp 8s linear infinite;
+  opacity: 0.8;
+}
+
+@keyframes floatUp {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-120vh);
+  }
+}
+
