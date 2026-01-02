@@ -1,0 +1,63 @@
+:root {
+  --pink-bg: #ffe6ef;
+  --pink-main: #ff8fb1;
+  --pink-dark: #ff5c8a;
+  --soft-white: #fff7fb;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro", sans-serif;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(180deg, #ffe6ef, #fff7fb);
+  min-height: 100svh;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100svh;
+  padding: 16px;
+}
+
+.card {
+  background: white;
+  padding: 32px 24px;
+  border-radius: 24px;
+  text-align: center;
+  max-width: 380px;
+  width: 100%;
+  box-shadow: 0 10px 30px rgba(255, 143, 177, 0.25);
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 8px;
+  color: var(--pink-dark);
+}
+
+p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 24px;
+}
+
+button {
+  background: var(--pink-main);
+  color: white;
+  border: none;
+  padding: 14px 24px;
+  border-radius: 999px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+button:active {
+  transform: scale(0.95);
+  background: var(--pink-dark);
+}
